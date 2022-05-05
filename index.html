@@ -1,1122 +1,203 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
-
-  
-  <title>CHEN</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to my blog!">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>CHEN - Welcome</title><meta name="author" content="Luheng Chen"><meta name="copyright" content="Luheng Chen"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Welcome to my blog!">
 <meta property="og:type" content="website">
 <meta property="og:title" content="CHEN">
 <meta property="og:url" content="http://example.com/index.html">
 <meta property="og:site_name" content="CHEN">
 <meta property="og:description" content="Welcome to my blog!">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
 <meta property="article:author" content="Luheng Chen">
 <meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="CHEN" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  
-<link rel="stylesheet" href="/css/style.css">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'CHEN',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2022-05-05 22:25:36'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">CHEN</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
         
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-C++基础" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2022/05/05/C++%E5%9F%BA%E7%A1%80/" class="article-date">
-  <time datetime="2022-05-05T07:26:46.049Z" itemprop="datePublished">2022-05-05</time>
-</a>
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
     
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="1-初识C"><a href="#1-初识C" class="headerlink" title="1 初识C++"></a>1 初识C++</h1><h2 id="1-1-第一个C-程序"><a href="#1-1-第一个C-程序" class="headerlink" title="1.1 第一个C++程序"></a>1.1 第一个C++程序</h2><p>打印Hello world</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;Hello world&quot;</span>&lt;&lt;endl;</span><br><span class="line">    <span class="comment">//等价于：cout&lt;&lt;&quot;Hello world&quot;&lt;&lt;\n;</span></span><br><span class="line">    </span><br><span class="line">    <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">CHEN</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">CHEN</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/2022/05/05/C++%E5%9F%BA%E7%A1%80/" title="C++基础"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C++基础"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/05/05/C++%E5%9F%BA%E7%A1%80/" title="C++基础">C++基础</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-05-05T07:26:46.049Z" title="发表于 2022-05-05 15:26:46">2022-05-05</time></span></div><div class="content">1 初识C++1.1 第一个C++程序打印Hello world
+123456789101112#include&lt;iostream&gt;using namespace std;int main()&#123;    cout&lt;&lt;&quot;Hello world&quot;&lt;&lt;endl;    //等价于：cout&lt;&lt;&quot;Hello world&quot;&lt;&lt;\n;        system(&quot;pause&quot;);        return 0;&#125;
 
-<p>”endl“：可以实现换行</p>
-<p>system(“pause”)：让程序暂停一下，然后按任意键继续，初学的时候最多见于程序的末尾处，用于看运行结果，避免程序一闪而过。相同的我们还可以用getchar()，避免程序运行完直接结束而看不到运行结果。</p>
-<h2 id="1-2-注释"><a href="#1-2-注释" class="headerlink" title="1.2 注释"></a>1.2 注释</h2><ol>
-<li>单行注释：//描述信息</li>
-<li>多行注释：/* 描述信息 */</li>
-</ol>
-<h2 id="1-3-变量"><a href="#1-3-变量" class="headerlink" title="1.3 变量"></a>1.3 变量</h2><p><code>数据类型  变量名 = 初始值 ；</code></p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> a = <span class="number">10</span> ;</span><br><span class="line">    </span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;a=&quot;</span>&lt;&lt;a&lt;&lt;endl;</span><br><span class="line">    </span><br><span class="line">    <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+”endl“：可以实现换行
+system(“pause”)：让程序暂停一下，然后按任意键继续，初学的时候最多见于程序的末尾处，用于看运行结果，避免程序一闪而过。相同的我们还可以用getchar()，避免程序运行完直接结束而看不到运行结果。
+1.2 注释
+单行注释：//描述信息
+多行注释：/* 描述信息 */
 
-<p>输出结果为 a=10</p>
-<h2 id="1-4-常量"><a href="#1-4-常量" class="headerlink" title="1.4 常量"></a>1.4 常量</h2><p>C++定义常量（程序中不可更改的数据）的两种方式：</p>
-<ol>
-<li>#define 宏常量：<code>#define 常量名 常量值 </code>（通常在文件上方定义）</li>
-<li>const修饰的变量：<code>const 数据类型 常量名 = 常量值</code>（通常在变量定义前加关键字const）</li>
-</ol>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="comment">//#define宏常量</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> Day 7</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">//const修饰的变量</span></span><br><span class="line">    <span class="keyword">const</span> <span class="keyword">int</span> month = <span class="number">10</span> ;</span><br><span class="line">    </span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;month=&quot;</span>&lt;&lt;month&lt;&lt;endl;</span><br><span class="line">    </span><br><span class="line">    <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+1.3 变量数据类型  变量名 = 初始值 ；
+12345678910111213#include&lt;iostream&gt;usin ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/01/16/%E7%AC%AC1%E7%AB%A0%20%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%BC%95%E8%AE%BA/" title="第1章 操作系统引论"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="第1章 操作系统引论"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/01/16/%E7%AC%AC1%E7%AB%A0%20%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%BC%95%E8%AE%BA/" title="第1章 操作系统引论">第1章 操作系统引论</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-01-16T08:31:11.802Z" title="发表于 2022-01-16 16:31:11">2022-01-16</time></span></div><div class="content">操作系统引论OS定义​        OS是直接控制和管理计算机硬件、软件资源，合理地对各类作业进行调度，以方便用户使用地程序集合。OS是配置在计算机硬件上地第一层软件，是对硬件系统地首次扩充。
+OS的目标
+有效性
 
-<h2 id="1-5-关键字"><a href="#1-5-关键字" class="headerlink" title="1.5 关键字"></a>1.5 关键字</h2><p>定义变量时或常量时不可使用关键字</p>
-<h2 id="1-6-标识符命名规则"><a href="#1-6-标识符命名规则" class="headerlink" title="1.6 标识符命名规则"></a>1.6 标识符命名规则</h2><ol>
-<li>标识符不能是关键字</li>
-<li>标识符只能由字母、数字、下划线组成</li>
-<li>第一个字符必须是字母或下划线</li>
-<li><strong>标识符中区分大小写</strong></li>
-</ol>
-<p>给标识符命名时尽可能做到见名知意，可用英文单词或其缩写</p>
-<h1 id="2-数据类型"><a href="#2-数据类型" class="headerlink" title="2 数据类型"></a>2 数据类型</h1><p>C++规定在创建一个变量或者常量时，必须要指定相应的数据类型，否则无法给变量分配内存</p>
-<h2 id="2-1-整型"><a href="#2-1-整型" class="headerlink" title="2.1 整型"></a>2.1 整型</h2><table>
-<thead>
-<tr>
-<th align="center">数据类型</th>
-<th align="center">占用空间</th>
-<th>取值范围</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">short(短整型)</td>
-<td align="center">2字节</td>
-<td>（-2^15-2^15-1）</td>
-</tr>
-<tr>
-<td align="center">int(整形)</td>
-<td align="center">4字节</td>
-<td>（-2^31-2^31-1）</td>
-</tr>
-<tr>
-<td align="center">long(长整型)</td>
-<td align="center">Windows为4字节，Linux为4字节（32位），8字节（64位）</td>
-<td>（-2^31-2^31-1）</td>
-</tr>
-<tr>
-<td align="center">long long(长长整型)</td>
-<td align="center">8字节</td>
-<td>（-2^63-2^63-1）</td>
-</tr>
-</tbody></table>
-<p>short：-32768~32767</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">short</span> num = <span class="number">32768</span>;</span><br><span class="line">cout&lt;&lt;<span class="string">&quot;num=&quot;</span>&lt;&lt;num&lt;&lt;endl;</span><br></pre></td></tr></table></figure>
+​        1.提高系统资源的利用率
+​        2.提高系统的吞吐量
 
-<p>输出结果：num = -32768</p>
-<h2 id="2-2-sizeof关键字"><a href="#2-2-sizeof关键字" class="headerlink" title="2.2 sizeof关键字"></a>2.2 sizeof关键字</h2><p>利用sizeof关键字可以统计数据类型所占内存大小</p>
-<p><strong>语法：</strong><code>sizeof(数据类型/变量)</code></p>
-<h2 id="2-3-实型（浮点型）"><a href="#2-3-实型（浮点型）" class="headerlink" title="2.3 实型（浮点型）"></a>2.3 实型（浮点型）</h2><table>
-<thead>
-<tr>
-<th align="center">数据类型</th>
-<th align="center">占用空间</th>
-<th align="center">有效数字范围</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">float（单精度）</td>
-<td align="center">4字节</td>
-<td align="center">7位有效数字</td>
-</tr>
-<tr>
-<td align="center">double（双精度）</td>
-<td align="center">8字节</td>
-<td align="center">15-16位有效数字</td>
-</tr>
-</tbody></table>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">float</span> num1 = <span class="number">3.1415926f</span>;	<span class="comment">//不加“f”，会默认其为双精度</span></span><br><span class="line">cout&lt;&lt;<span class="string">&quot;num1=&quot;</span>&lt;&lt;num1&lt;&lt;endl;</span><br><span class="line"><span class="keyword">double</span> num2 = <span class="number">3.1415926</span>;</span><br><span class="line">cout&lt;&lt;<span class="string">&quot;num2=&quot;</span>&lt;&lt;num2&lt;&lt;endl;</span><br></pre></td></tr></table></figure>
+方便性    
 
-<p>输出结果：</p>
-<p>num1=3.14159</p>
-<p>num2=3.14159</p>
-<p><strong>输出一个小数，默认情况下均只显示6位有效数字</strong></p>
-<p><strong>科学计数法：</strong></p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">float</span> num1 = <span class="number">3e2</span>;	<span class="comment">//3*10^2</span></span><br><span class="line">cout&lt;&lt;<span class="string">&quot;num1=&quot;</span>&lt;&lt;num1&lt;&lt;endl;</span><br><span class="line"><span class="keyword">float</span> num2 = <span class="number">3e-2</span>;	<span class="comment">//3*0.1^2</span></span><br><span class="line">cout&lt;&lt;<span class="string">&quot;num2=&quot;</span>&lt;&lt;num2&lt;&lt;endl;</span><br></pre></td></tr></table></figure>
+可扩充性 
 
-<p>输出结果：</p>
-<p>num1=300</p>
-<p>num2=0.03</p>
-<h2 id="2-4-字符型"><a href="#2-4-字符型" class="headerlink" title="2.4 字符型"></a>2.4 字符型</h2><p><strong>语法：</strong><code>char ch = &#39;a&#39;;</code></p>
-<p><strong>注意：</strong></p>
-<ol>
-<li>在显示字符型变量时，用单引号将字符括起来，不要用双引号</li>
-<li>单引号内只能有一个字符，不可以是字符串</li>
-</ol>
-<p>说明：</p>
-<ol>
-<li>C和C++中字符型变量只占用1个字节</li>
-<li>字符型变量并不是把字符本身放到内存中存储，而是将对应的ASCII码放入存储单元</li>
-</ol>
-<p>常见错误：</p>
-<ol>
-<li>char ch1 = “2”;    创建字符型变量要用单引号</li>
-<li>char ch2 = ‘abcdef’;    创建字符型变量时单引号内只能有一个字符</li>
-</ol>
-<p>查看字符型变量对应的ASCII码：</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">char</span> ch = <span class="string">&#x27;a&#x27;</span>;</span><br><span class="line">cout&lt;&lt;(<span class="keyword">int</span>)ch&lt;&lt;endl;</span><br></pre></td></tr></table></figure>
+开放性
 
-<p>输出结果为：97</p>
-<h2 id="2-5-转义字符"><a href="#2-5-转义字符" class="headerlink" title="2.5 转义字符"></a>2.5 转义字符</h2><table>
-<thead>
-<tr>
-<th align="center">转义字符</th>
-<th align="center">含义</th>
-<th align="center">ASCII码（十进制）</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">\a</td>
-<td align="center">警报</td>
-<td align="center">007</td>
-</tr>
-<tr>
-<td align="center">\b</td>
-<td align="center">退格（BS），将当前位置移到前一列</td>
-<td align="center">008</td>
-</tr>
-<tr>
-<td align="center">\f</td>
-<td align="center">换页（FF），将当前位置移到下页开头</td>
-<td align="center">012</td>
-</tr>
-<tr>
-<td align="center"><strong>\n</strong></td>
-<td align="center">换行（LF），将当前位置移到下一行开头</td>
-<td align="center">010</td>
-</tr>
-<tr>
-<td align="center">\r</td>
-<td align="center">回车（CR），将当前位置移到本行开头</td>
-<td align="center">013</td>
-</tr>
-<tr>
-<td align="center"><strong>\t</strong></td>
-<td align="center">水平制表（HT），跳到下一个TAB位置</td>
-<td align="center">009</td>
-</tr>
-<tr>
-<td align="center">\v</td>
-<td align="center">垂直制表（VT）</td>
-<td align="center">011</td>
-</tr>
-<tr>
-<td align="center">\\</td>
-<td align="center">代表一个反斜线字符”\“</td>
-<td align="center">092</td>
-</tr>
-<tr>
-<td align="center">\‘</td>
-<td align="center">代表一个单引号字符</td>
-<td align="center">039</td>
-</tr>
-<tr>
-<td align="center">\‘’</td>
-<td align="center">代表一个双引号字符</td>
-<td align="center">034</td>
-</tr>
-<tr>
-<td align="center">?</td>
-<td align="center">代表一个问号字符</td>
-<td align="center">063</td>
-</tr>
-</tbody></table>
-<p>”\n“：<code>cout&lt;&lt;&quot;Hello world&quot;&lt;&lt;\n</code></p>
-<p>“\t”：<code>cout&lt;&lt;&quot;a\tb&quot;&lt;&lt;endl</code>   ”\t“一共占八个位置，如本例，a占据第一个位置，则a与b之间就空七位置（即七个空格），输出多行时，空出位置后面紧跟的内容可以实现上下对齐</p>
-<h2 id="2-6-字符串型"><a href="#2-6-字符串型" class="headerlink" title="2.6 字符串型"></a>2.6 字符串型</h2><ol>
-<li>C风格字符串：<code>char 变量名[] = &quot;字符串值&quot;;</code>(C风格的字符串要用双引号括起来)</li>
-</ol>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">char</span> str1[] = <span class="string">&quot;Hello world&quot;</span>;</span><br><span class="line">    cout &lt;&lt; str1 &lt;&lt; endl;</span><br><span class="line">    </span><br><span class="line">    <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<ol start="2">
-<li>C++风格字符串：<code>string 变量名 = &quot;字符串值&quot;;</code></li>
-</ol>
-<p><strong>需要引入头文件  <code>#include&lt;string&gt;</code></strong></p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    string str2 = <span class="string">&quot;Hello world&quot;</span>;</span><br><span class="line">    cout &lt;&lt; str2 &lt;&lt; endl;</span><br><span class="line">    </span><br><span class="line">    <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+OS的作用
+作为用户和计算机间的接口
 
-<h2 id="2-7-布尔类型-bool"><a href="#2-7-布尔类型-bool" class="headerlink" title="2.7 布尔类型 bool"></a>2.7 布尔类型 bool</h2><p>bool类型只有两个值，bool类型占1个字节大小</p>
-<ul>
-<li>true——真（本质是1）</li>
-<li>false——假（本质是0）</li>
-</ul>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">//创建bool数据类型</span></span><br><span class="line">    <span class="keyword">bool</span> flag = <span class="literal">true</span>;</span><br><span class="line">    cout &lt;&lt; flag &lt;&lt; endl;</span><br><span class="line">    <span class="comment">//输出结果为  1  </span></span><br><span class="line">    </span><br><span class="line">    <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+​        OS处于用户与计算机硬件系统之间，用户通过OS来使用计算机系统。用户通过：命令方式、系统调用方式和图标-窗口方式来实现与操作系统的通信，并取得它的服务。
 
-<h2 id="2-8-数据的输入"><a href="#2-8-数据的输入" class="headerlink" title="2.8 数据的输入"></a>2.8 数据的输入</h2><p><strong>关键字：</strong>cin</p>
-<p><strong>语法：</strong><code>cin &gt;&gt; 变量</code></p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">//1.整型</span></span><br><span class="line">    <span class="keyword">int</span> a = <span class="number">0</span>;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;请给整型变量a赋值：&quot;</span> &lt;&lt; endl;</span><br><span class="line">    cin &gt;&gt; a;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;整型变量a = &quot;</span> &lt;&lt; a &lt;&lt; endl;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//2.浮点型</span></span><br><span class="line">    <span class="keyword">float</span> f = <span class="number">1.2f</span>;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;请给整型变量f赋值：&quot;</span> &lt;&lt; endl;</span><br><span class="line">    cin &gt;&gt; f;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;整型变量f = &quot;</span> &lt;&lt; f &lt;&lt; endl;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//3.字符型、4.字符串行与上类似，注意字符串行需要引入头文件#include&lt;string&gt;</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment">//5.布尔类型，只要输入非0类型，都代表真，即会变为1</span></span><br><span class="line">    </span><br><span class="line">    <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+作为计算机系统资源的管理者
+处理机管理、存储器管理、设备管理、文件管理。
 
-<h1 id="3-运算符"><a href="#3-运算符" class="headerlink" title="3 运算符"></a>3 运算符</h1><h2 id="3-1-算数运算符"><a href="#3-1-算数运算符" class="headerlink" title="3.1 算数运算符"></a>3.1 算数运算符</h2><table>
-<thead>
-<tr>
-<th align="center">运算符</th>
-<th align="center">术语</th>
-<th align="center">实例</th>
-<th align="center">结果</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">+</td>
-<td align="center">正号</td>
-<td align="center">+3</td>
-<td align="center">3</td>
-</tr>
-<tr>
-<td align="center">-</td>
-<td align="center">负号</td>
-<td align="center">-3</td>
-<td align="center">-3</td>
-</tr>
-<tr>
-<td align="center">+</td>
-<td align="center">加</td>
-<td align="center">10+5</td>
-<td align="center">15</td>
-</tr>
-<tr>
-<td align="center">-</td>
-<td align="center">减</td>
-<td align="center">10-5</td>
-<td align="center">5</td>
-</tr>
-<tr>
-<td align="center">*</td>
-<td align="center">乘</td>
-<td align="center">10*5</td>
-<td align="center">50</td>
-</tr>
-<tr>
-<td align="center">/</td>
-<td align="center">除</td>
-<td align="center">10/5</td>
-<td align="center">2</td>
-</tr>
-<tr>
-<td align="center">%</td>
-<td align="center">取余（取模）</td>
-<td align="center">10%3</td>
-<td align="center">1</td>
-</tr>
-<tr>
-<td align="center">++</td>
-<td align="center">前置递增</td>
-<td align="center">a=2;b=++a</td>
-<td align="center">a==3;b==3</td>
-</tr>
-<tr>
-<td align="center">++</td>
-<td align="center">后置递增</td>
-<td align="center">a=2;b=a++</td>
-<td align="center">a==3;b==2</td>
-</tr>
-<tr>
-<td align="center">–</td>
-<td align="center">前置递减</td>
-<td align="center">a=2;b=–a</td>
-<td align="center">a==1;b==1</td>
-</tr>
-<tr>
-<td align="center">–</td>
-<td align="center">后置递减</td>
-<td align="center">a=2;b=a–</td>
-<td align="center">a==1;b==2</td>
-</tr>
-</tbody></table>
-<p><strong>注意：</strong></p>
-<ol>
-<li>两个整数相除，结果依然是整数，小数部分会被去除</li>
-<li>当除数赋值为0时，非法操作，程序无法正常运行，应避免（取模运算相同）</li>
-<li>不允许两个小数进行取模运算</li>
-</ol>
-<h2 id="3-2-赋值运算符"><a href="#3-2-赋值运算符" class="headerlink" title="3.2 赋值运算符"></a>3.2 赋值运算符</h2><table>
-<thead>
-<tr>
-<th align="center">运算符</th>
-<th align="center">术语</th>
-<th align="center">示例</th>
-<th align="center">结果</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">=</td>
-<td align="center">赋值</td>
-<td align="center">a=2;b=3</td>
-<td align="center">a=2;b=3</td>
-</tr>
-<tr>
-<td align="center">+=</td>
-<td align="center">加等于</td>
-<td align="center">a=0;a+=2</td>
-<td align="center">a=2</td>
-</tr>
-<tr>
-<td align="center">-=</td>
-<td align="center">减等于</td>
-<td align="center">a=5;a-=2</td>
-<td align="center">a=3</td>
-</tr>
-<tr>
-<td align="center">*=</td>
-<td align="center">乘等于</td>
-<td align="center">a=3;a+=2</td>
-<td align="center">a=6</td>
-</tr>
-<tr>
-<td align="center">/=</td>
-<td align="center">除等于</td>
-<td align="center">a=8;a+=2</td>
-<td align="center">a=4</td>
-</tr>
-<tr>
-<td align="center">%=</td>
-<td align="center">模等于</td>
-<td align="center">a=5;a+=2</td>
-<td align="center">a=1</td>
-</tr>
-</tbody></table>
-<h2 id="3-3-比较运算符"><a href="#3-3-比较运算符" class="headerlink" title="3.3 比较运算符"></a>3.3 比较运算符</h2><table>
-<thead>
-<tr>
-<th align="center">运算符</th>
-<th align="center">术语</th>
-<th align="center">示例</th>
-<th align="center">结果</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">==</td>
-<td align="center">相等</td>
-<td align="center">2==5</td>
-<td align="center">0</td>
-</tr>
-<tr>
-<td align="center">!=</td>
-<td align="center">不等于</td>
-<td align="center">2!=5</td>
-<td align="center">1</td>
-</tr>
-<tr>
-<td align="center">&lt;</td>
-<td align="center">小于</td>
-<td align="center">2&lt;5</td>
-<td align="center">1</td>
-</tr>
-<tr>
-<td align="center">&gt;</td>
-<td align="center">大于</td>
-<td align="center">2&gt;5</td>
-<td align="center">0</td>
-</tr>
-<tr>
-<td align="center">&lt;=</td>
-<td align="center">小于等于</td>
-<td align="center">2&lt;=5</td>
-<td align="center">1</td>
-</tr>
-<tr>
-<td align="center">&gt;=</td>
-<td align="center">大于等于</td>
-<td align="center">2&gt;=5</td>
-<td align="center">0</td>
-</tr>
-</tbody></table>
-<h2 id="3-4-逻辑运算符"><a href="#3-4-逻辑运算符" class="headerlink" title="3.4 逻辑运算符"></a>3.4 逻辑运算符</h2><table>
-<thead>
-<tr>
-<th align="center">运算符</th>
-<th align="center">术语</th>
-<th align="center">示例</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">！</td>
-<td align="center">非</td>
-<td align="center">!a</td>
-</tr>
-<tr>
-<td align="center">&amp;&amp;</td>
-<td align="center">与</td>
-<td align="center">a&amp;&amp;b</td>
-</tr>
-<tr>
-<td align="center">||</td>
-<td align="center">或</td>
-<td align="center">a||b</td>
-</tr>
-</tbody></table>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">//1.非</span></span><br><span class="line">    <span class="keyword">int</span> a = <span class="number">3</span>;</span><br><span class="line">    cout &lt;&lt; !a &lt;&lt; endl;</span><br><span class="line">    <span class="comment">//输出结果为  0</span></span><br><span class="line">    cout &lt;&lt; !!a &lt;&lt; endl;</span><br><span class="line">    <span class="comment">//输出结果为  1</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment">//2.与  (注：非0均为真)</span></span><br><span class="line">    <span class="keyword">int</span> a = <span class="number">2</span>;</span><br><span class="line">    <span class="keyword">int</span> b = <span class="number">2</span>;</span><br><span class="line">    cout &lt;&lt; (a &amp;&amp; b) &lt;&lt; endl;</span><br><span class="line">    <span class="comment">//输出为  1</span></span><br><span class="line">    <span class="keyword">int</span> c = <span class="number">0</span>;</span><br><span class="line">    cout &lt;&lt; (a &amp;&amp; c) &lt;&lt; endl;</span><br><span class="line">    <span class="comment">//输出为  0</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment">//3.或</span></span><br><span class="line">    <span class="keyword">int</span> a = <span class="number">2</span>;</span><br><span class="line">    <span class="keyword">int</span> b = <span class="number">2</span>;</span><br><span class="line">    cout &lt;&lt; (a || b) &lt;&lt; endl;</span><br><span class="line">    <span class="comment">//输出为  1</span></span><br><span class="line">    <span class="keyword">int</span> c = <span class="number">0</span>;</span><br><span class="line">    cout &lt;&lt; (a || c) &lt;&lt; endl;</span><br><span class="line">    <span class="comment">//输出为  1</span></span><br><span class="line">    </span><br><span class="line">    <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+实现了对计算机资源的抽象
 
-<h1 id="4-程序流程结构"><a href="#4-程序流程结构" class="headerlink" title="4 程序流程结构"></a>4 程序流程结构</h1><p>C/C++支持最基本的三种程序运行结构：顺序结构、选择结构、循环结构</p>
-<h2 id="4-1-选择结构"><a href="#4-1-选择结构" class="headerlink" title="4.1 选择结构"></a>4.1 选择结构</h2><h3 id="4-1-1-if语句"><a href="#4-1-1-if语句" class="headerlink" title="4.1.1 if语句"></a>4.1.1 if语句</h3><p>单行格式if语句、多行格式if语句、多条件的if语句、嵌套if语句</p>
-<ol>
-<li>单行格式if语句：<code>if(条件)&#123;条件满足执行的语句&#125;</code></li>
-<li>多行格式if语句：<code>if(条件)&#123;条件满足执行的语句&#125; else&#123;条件不满足执行的语句&#125;</code></li>
-<li>多条件的if语句：<code>if(条件1)&#123;条件1满足执行的语句&#125; else if&#123;条件2满足执行的语句&#125;···else&#123;都不满足执行的语句&#125;</code></li>
-<li>嵌套if语句：在if语句中，可以嵌套使用if语句，达到更精确的条件判断</li>
-</ol>
-<p><strong>案例练习：三只小猪称体重，判断哪只最重</strong></p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">//创建三只小猪的体重变量</span></span><br><span class="line">    <span class="keyword">int</span> p1 = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> p2 = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> p3 = <span class="number">0</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//用户输入三只小猪的体重</span></span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;请输入小猪A的体重&quot;</span> &lt;&lt;endl;</span><br><span class="line">    cin &gt;&gt; p1;</span><br><span class="line">    </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;请输入小猪B的体重&quot;</span> &lt;&lt;endl;</span><br><span class="line">    cin &gt;&gt; p2;</span><br><span class="line">    </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;请输入小猪C的体重&quot;</span> &lt;&lt;endl;</span><br><span class="line">    cin &gt;&gt; p3;</span><br><span class="line">    </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;小猪A的体重为：&quot;</span> &lt;&lt; p1 &lt;&lt; enl;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;小猪B的体重为：&quot;</span> &lt;&lt; p2 &lt;&lt; enl;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;小猪C的体重为：&quot;</span> &lt;&lt; p3 &lt;&lt; enl;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//判断哪只最重</span></span><br><span class="line">    <span class="keyword">if</span>(p1 &gt; p2)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(p1 &gt; p3)</span><br><span class="line">        &#123;</span><br><span class="line">            cout &lt;&lt; <span class="string">&quot;小猪A最重&quot;</span> &lt;&lt; endl;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            cout &lt;&lt; <span class="string">&quot;小猪C最重&quot;</span> &lt;&lt; endl;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(p2 &gt; p3)</span><br><span class="line">        &#123;</span><br><span class="line">            cout &lt;&lt; <span class="string">&quot;小猪B最重&quot;</span> &lt;&lt; endl;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            cout &lt;&lt; <span class="string">&quot;小猪C最重&quot;</span> &lt;&lt; endl;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+推动OS发展的主要动力
+不断提高计算机资源的利用率
+方便用户
+元器件的不断更新换代
+计算机体系结构的不断发展
+不断提出新的应用需求
 
+OS的发展过程无OS （仅了解即可）
+人工操作方式
 
-<h3 id="4-1-2-三目运算符"><a href="#4-1-2-三目运算符" class="headerlink" title="4.1.2 三目运算符"></a>4.1.2 三目运算符</h3><p><strong>作用：</strong>通过三目运算符实现简单的判断</p>
-<p><strong>语法：</strong><code>表达式1 ? 表达式2 : 表达式3</code></p>
-<p><strong>解释：</strong></p>
-<ul>
-<li>如果表达式1的值为真，执行表达式2，并返回表达式2的结果；</li>
-<li>如果表达式1的值为假，执行表达式3，并返回表达式3的结果；</li>
-</ul>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> a = <span class="number">5</span>;</span><br><span class="line">    <span class="keyword">int</span> b = <span class="number">7</span>;</span><br><span class="line">    <span class="keyword">int</span> c = <span class="number">0</span>;</span><br><span class="line">    </span><br><span class="line">    c = (a &gt; b ? a : b);</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//在C++中三目运算符返回的是变量，可以继续赋值</span></span><br><span class="line">    (a &gt; b ? a : b) = <span class="number">100</span> <span class="comment">//此使b的值为100</span></span><br><span class="line">    </span><br><span class="line">    <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+​        1946-50年代中：电子管时代，计算机速度慢，无操作系统，集中计算，计算机资源昂贵；
+​        工作方式：
+​    ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2021/11/13/Hello-my-blog/" title="Hello my blog"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello my blog"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/11/13/Hello-my-blog/" title="Hello my blog">Hello my blog</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-11-13T11:21:05.000Z" title="发表于 2021-11-13 19:21:05">2021-11-13</time></span></div><div class="content">MoodI am so excited to set up my personal blog!
+</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2021/11/13/hello-world/" title="Hello World"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/11/13/hello-world/" title="Hello World">Hello World</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-11-13T11:13:44.440Z" title="发表于 2021-11-13 19:13:44">2021-11-13</time></span></div><div class="content">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;
 
-<h3 id="4-1-3-switch语句"><a href="#4-1-3-switch语句" class="headerlink" title="4.1.3 switch语句"></a>4.1.3 switch语句</h3><p><strong>语法：</strong></p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in"><span class="keyword">switch</span></span>(表达式)</span><br><span class="line">&#123;</span><br><span class="line">        <span class="keyword">case</span> 结果<span class="number">1</span>：执行语句； <span class="keyword">break</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">case</span> 结果<span class="number">2</span>：执行语句； <span class="keyword">break</span>;</span><br><span class="line">        </span><br><span class="line">        ···</span><br><span class="line">            </span><br><span class="line">        <span class="keyword">case</span> 结果n：执行语句； <span class="keyword">break</span>;</span><br><span class="line">        </span><br><span class="line">    	<span class="keyword">default</span>:执行语句; <span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+More info: Writing
+Run server1$ hexo server
 
-<p>switch语句在判断时候只能是整型或者字符型，不可以是一个区间</p>
-<h2 id="4-2-循环结构"><a href="#4-2-循环结构" class="headerlink" title="4.2 循环结构"></a>4.2 循环结构</h2><h3 id="4-2-1-while循环语句"><a href="#4-2-1-while循环语句" class="headerlink" title="4.2.1 while循环语句"></a>4.2.1 while循环语句</h3><p><strong>语法：</strong><code>while(循环条件)&#123;循环语句&#125;</code></p>
-<p><strong>案例练习：猜数字游戏</strong></p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;ctime&gt;</span><span class="comment">//time系统时间头文件</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">//添加随机数种子，利用当前时间生成随机数，防止每次生成的随机数都一样</span></span><br><span class="line">    <span class="built_in">srand</span>(<span class="keyword">unsigned</span> <span class="keyword">int</span>)<span class="built_in">time</span>(<span class="literal">NULL</span>);</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//系统生成随机数</span></span><br><span class="line">    <span class="keyword">int</span> num = <span class="built_in">rand</span>()%<span class="number">100</span>+<span class="number">1</span>;	<span class="comment">//生成（0+1）~（99+1）随机数</span></span><br><span class="line">    <span class="keyword">int</span> val = <span class="number">0</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">while</span>(<span class="number">1</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        cin &gt;&gt; val;	<span class="comment">//玩家输入数据</span></span><br><span class="line">    </span><br><span class="line">  	  <span class="comment">//判断玩家的猜测</span></span><br><span class="line">   		<span class="keyword">if</span>(val &gt; num)</span><br><span class="line">    	&#123;</span><br><span class="line">        	cout &lt;&lt; (<span class="string">&quot;猜大了&quot;</span>) &lt;&lt; endl;</span><br><span class="line">    	&#125;</span><br><span class="line">    	<span class="keyword">else</span> <span class="keyword">if</span>(val &lt; num)</span><br><span class="line">    	&#123;</span><br><span class="line">       		cout &lt;&lt; (<span class="string">&quot;猜小了&quot;</span>) &lt;&lt; endl;</span><br><span class="line">    	&#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            cout &lt;&lt; (<span class="string">&quot;猜对了&quot;</span>) &lt;&lt; endl;</span><br><span class="line">            <span class="keyword">break</span>;	<span class="comment">//可以利用break关键字退出当前循环</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;        </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+More info: Server
+Generate static files1$ hexo generate
 
-<h3 id="4-2-2-do-while循环语句"><a href="#4-2-2-do-while循环语句" class="headerlink" title="4.2.2 do while循环语句"></a>4.2.2 do while循环语句</h3><p><strong>语法：</strong><code>do&#123;循环语句&#125;while(循环条件)</code></p>
-<p>do while会先执行一次循环语句，再判断循环条件</p>
-<p><strong>案例练习：水仙花数</strong></p>
-<p><strong>案例描述：</strong>水仙花数是指一个三位数，它的每个位上的数字的3次幂之和等于它本身，例如：1^+5^3+3^3=153.</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">int</span> num = <span class="number">100</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">do</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">int</span> a = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> b = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> c = <span class="number">0</span>;</span><br><span class="line">        </span><br><span class="line">        a = num%<span class="number">10</span>;	<span class="comment">//个位</span></span><br><span class="line">        b = num/<span class="number">10</span>%<span class="number">10</span>; <span class="comment">//十位</span></span><br><span class="line">        c = num/<span class="number">100</span>;	<span class="comment">//百位</span></span><br><span class="line">        </span><br><span class="line">        <span class="comment">//判断水仙花数</span></span><br><span class="line">        <span class="keyword">if</span>(a*a*a + b*b*b + c*c*c == num)</span><br><span class="line">        &#123;</span><br><span class="line">            cout &lt;&lt; num &lt;&lt;endl;</span><br><span class="line">        &#125;</span><br><span class="line">        num++;</span><br><span class="line">    &#125;<span class="keyword">while</span>(num &lt; <span class="number">1000</span>);</span><br><span class="line">    </span><br><span class="line">    <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+More info: Generating
+Deploy to remote sites1$ hexo deploy
 
-<h3 id="4-2-3-for循环语句"><a href="#4-2-3-for循环语句" class="headerlink" title="4.2.3 for循环语句"></a>4.2.3 for循环语句</h3><p><strong>语法：</strong><code>for(起始表达式;条件表达式;末尾循环体)&#123;循环语句&#125;</code></p>
-<p><strong>案例练习：敲桌子</strong></p>
-<p><strong>案例描述：</strong>从1开始数到数字100，如果数字个位含有7，或者数字十位含有7，或者该数字是7的倍数，我们打印敲桌子，其余数字直接打印输出。</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span> ; i&lt;=<span class="number">100</span> ; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(i%<span class="number">7</span>==<span class="number">0</span> || i%<span class="number">10</span>==<span class="number">7</span> || i/<span class="number">10</span>==<span class="number">7</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            cout &lt;&lt; <span class="string">&quot;敲桌子&quot;</span> &lt;&lt;endl;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            cout &lt;&lt; i &lt;&lt;endl;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="4-2-4-嵌套循环"><a href="#4-2-4-嵌套循环" class="headerlink" title="4.2.4 嵌套循环"></a>4.2.4 嵌套循环</h3><p><strong>案例练习：乘法口诀表</strong></p>
-<p><strong>案例描述：</strong>利用嵌套循环，实现九九乘法表</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span> ; i&lt;=<span class="number">9</span> ; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span> ; j&lt;=i ; j++)</span><br><span class="line">        &#123;</span><br><span class="line">            cout&lt;&lt;j&lt;&lt;<span class="string">&quot;*&quot;</span>&lt;&lt;i&lt;&lt;<span class="string">&quot;=&quot;</span>&lt;&lt;j*i&lt;&lt;<span class="string">&quot;  &quot;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        cout&lt;&lt;endl;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="4-3-跳转语句"><a href="#4-3-跳转语句" class="headerlink" title="4.3 跳转语句"></a>4.3 跳转语句</h2><h3 id="4-3-1-break语句"><a href="#4-3-1-break语句" class="headerlink" title="4.3.1 break语句"></a>4.3.1 break语句</h3><p><strong>作用：</strong>用于跳出选择结构或循环结构</p>
-<p><strong>使用时机：</strong></p>
-<ul>
-<li>switch条件语句中，终止case并跳出switch</li>
-<li>在循环语句中，跳出当前循环语句</li>
-<li>在嵌套循环中，跳出最近的内层循环</li>
-</ul>
-<h3 id="4-3-2-continue语句"><a href="#4-3-2-continue语句" class="headerlink" title="4.3.2 continue语句"></a>4.3.2 continue语句</h3><p><strong>作用：</strong>在循环语句中，跳过本次循环中余下尚未执行的语句，继续开始下一次循环 </p>
-<h3 id="4-3-3-goto语句"><a href="#4-3-3-goto语句" class="headerlink" title="4.3.3 goto语句"></a>4.3.3 goto语句</h3><p><strong>作用：</strong>如果标记的名称存在，执行到goto语句时，可以无条件跳转到标记的位置(不建议使用goto)</p>
-<p><strong>语法：</strong>goto 标记</p>
-<p><strong>示例：</strong></p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;a&quot;</span> &lt;&lt; endl;</span><br><span class="line">    </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;b&quot;</span> &lt;&lt; endl;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">goto</span> FLAG;</span><br><span class="line">    </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;c&quot;</span> &lt;&lt; endl;</span><br><span class="line">    </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;d&quot;</span> &lt;&lt; endl;</span><br><span class="line">    </span><br><span class="line">    FLAG:</span><br><span class="line">    </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;e&quot;</span> &lt;&lt; endl;</span><br><span class="line">    </span><br><span class="line">    <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>输出结果：</p>
-<p>a</p>
-<p>b</p>
-<p>e</p>
-<h1 id="5-数组"><a href="#5-数组" class="headerlink" title="5 数组"></a>5 数组</h1><h2 id="5-1-概述"><a href="#5-1-概述" class="headerlink" title="5.1 概述"></a>5.1 概述</h2><p>数组，就是一个集合，里面存放了相同类型的数据元素</p>
-<p><strong>特点：</strong></p>
-<ul>
-<li>数组中的每个数据元素都是相同的数据类型</li>
-<li>数组是由连续的内存位置组成的</li>
-</ul>
-<h2 id="5-2-一维数组"><a href="#5-2-一维数组" class="headerlink" title="5.2 一维数组"></a>5.2 一维数组</h2><h3 id="5-2-1-一维数组的定义方式"><a href="#5-2-1-一维数组的定义方式" class="headerlink" title="5.2.1 一维数组的定义方式"></a>5.2.1 一维数组的定义方式</h3><p>一维数组定义的三种方式：</p>
-<ol>
-<li><code>数据类型 数组名[数组长度];</code></li>
-<li><code>数据类型 数组名[数组长度]=&#123;值1,值2,···&#125;;</code></li>
-<li><code>数据类型 数组名[]=&#123;值1,值2,···&#125;</code></li>
-</ol>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">//1. 数据类型 数组名[数组长度];</span></span><br><span class="line">    <span class="keyword">int</span> arr[<span class="number">5</span>];</span><br><span class="line">    </span><br><span class="line">    arr[<span class="number">0</span>] = <span class="number">0</span>;</span><br><span class="line">    arr[<span class="number">1</span>] = <span class="number">1</span>;</span><br><span class="line">    arr[<span class="number">2</span>] = <span class="number">2</span>;</span><br><span class="line">    arr[<span class="number">3</span>] = <span class="number">3</span>;</span><br><span class="line">    arr[<span class="number">4</span>] = <span class="number">4</span>;</span><br><span class="line">    </span><br><span class="line">    cout&lt;&lt;arr[<span class="number">0</span>]&lt;&lt;endl;</span><br><span class="line">    </span><br><span class="line">	<span class="comment">//2. 数据类型 数组名[数组长度]=&#123;值1,值2,···&#125;;</span></span><br><span class="line">    <span class="keyword">int</span> arr2[<span class="number">5</span>] = &#123;<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>&#125;;</span><br><span class="line">    <span class="comment">//若arr2[5] = &#123;0,1,2&#125;，则相当于arr2[5] = &#123;0,1,2,0,0&#125;</span></span><br><span class="line">    <span class="comment">//初始化没有赋值的默认用0补齐</span></span><br><span class="line">    </span><br><span class="line">    cout&lt;&lt;arr2[<span class="number">0</span>]&lt;&lt;endl;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">5</span>;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        cout&lt;&lt;arr2[i]&lt;&lt;endl;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">	<span class="comment">//3. 数据类型 数组名[]=&#123;值1,值2,···&#125;</span></span><br><span class="line">    <span class="keyword">int</span> arr3[] = &#123;<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>&#125;;<span class="comment">//可自动识别长度为5</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">5</span>;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        cout&lt;&lt;arr2[i]&lt;&lt;endl;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="5-2-2-一维数组数组名"><a href="#5-2-2-一维数组数组名" class="headerlink" title="5.2.2 一维数组数组名"></a>5.2.2 一维数组数组名</h3><p><strong>用途：</strong></p>
-<ul>
-<li>统计整个数组在内存中的长度    <code>sizeof(数组名);</code></li>
-</ul>
-<p><code> cout &lt;&lt; sizeof(arr) &lt;&lt; endl;</code></p>
-<ul>
-<li>统计某个元素占用内存大小<code> sizeof(数组名[下标]);</code></li>
-</ul>
-<p><code> cout &lt;&lt; sizeof(arr[0]) &lt;&lt; endl;</code></p>
-<p>数组中元素的个数：</p>
-<p><code> cout &lt;&lt; sizeof(arr) / sizeof(arr[0]) &lt;&lt; endl;</code></p>
-<ul>
-<li>获取数组在内存中的首地址    <code>cout &lt;&lt; 数组名 &lt;&lt;endl;</code></li>
-</ul>
-<p>输出为16进制： <code> cout &lt;&lt; arr &lt;&lt; endl;</code></p>
-<p>输出为十进制： <code> cout &lt;&lt; (int)arr &lt;&lt; endl;</code></p>
-<p>​                             <code> cout &lt;&lt; (int)&amp;arr[0] &lt;&lt; endl;</code></p>
-<p><strong>注：</strong>数组名是一个常量，不可以进行赋值操作</p>
-<h3 id="5-2-3-一维数组案例练习"><a href="#5-2-3-一维数组案例练习" class="headerlink" title="5.2.3 一维数组案例练习"></a>5.2.3 一维数组案例练习</h3><p><strong>案例1：</strong>五只小猪称体重</p>
-<p><strong>案例描述：</strong>在一个数组中记录了五只小猪的体重，如：int arr[5] = {300,350,200,400,250};找出并打印最重的小猪的体重。</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/05/05/C++%E5%9F%BA%E7%A1%80/" data-id="cl2soqohd0000t0wq7wvsc71f" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-第1章 操作系统引论" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2022/01/16/%E7%AC%AC1%E7%AB%A0%20%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%BC%95%E8%AE%BA/" class="article-date">
-  <time datetime="2022-01-16T08:31:11.802Z" itemprop="datePublished">2022-01-16</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="操作系统引论"><a href="#操作系统引论" class="headerlink" title="操作系统引论"></a>操作系统引论</h1><h2 id="OS定义"><a href="#OS定义" class="headerlink" title="OS定义"></a>OS定义</h2><p>​        OS是直接控制和管理<strong>计算机硬件</strong>、<strong>软件资源</strong>，合理地对各类<strong>作业</strong>进行调度，以方便用户使用地程序集合。OS是配置在计算机硬件上地第一层软件，是对硬件系统地首次扩充。</p>
-<h2 id="OS的目标"><a href="#OS的目标" class="headerlink" title="OS的目标"></a>OS的目标</h2><ul>
-<li><strong>有效性</strong></li>
-</ul>
-<p>​        1.提高系统资源的利用率</p>
-<p>​        2.提高系统的吞吐量</p>
-<ul>
-<li><p><strong>方便性</strong>    </p>
-</li>
-<li><p>可扩充性 </p>
-</li>
-<li><p>开放性</p>
-</li>
-</ul>
-<h2 id="OS的作用"><a href="#OS的作用" class="headerlink" title="OS的作用"></a>OS的作用</h2><ol>
-<li><strong>作为用户和计算机间的接口</strong></li>
-</ol>
-<p>​        OS处于用户与计算机硬件系统之间，用户通过OS来使用计算机系统。用户通过：<strong>命令方式</strong>、<strong>系统调用方式</strong>和<strong>图标-窗口方式</strong>来实现与操作系统的通信，并取得它的服务。</p>
-<ol start="2">
-<li><p><strong>作为计算机系统资源的管理者</strong></p>
-<p>处理机管理、存储器管理、设备管理、文件管理。</p>
-</li>
-<li><p><strong>实现了对计算机资源的抽象</strong></p>
-</li>
-</ol>
-<h2 id="推动OS发展的主要动力"><a href="#推动OS发展的主要动力" class="headerlink" title="推动OS发展的主要动力"></a>推动OS发展的主要动力</h2><ol>
-<li>不断提高计算机资源的利用率</li>
-<li>方便用户</li>
-<li>元器件的不断更新换代</li>
-<li>计算机体系结构的不断发展</li>
-<li>不断提出新的应用需求</li>
-</ol>
-<h2 id="OS的发展过程"><a href="#OS的发展过程" class="headerlink" title="OS的发展过程"></a>OS的发展过程</h2><h3 id="无OS-（仅了解即可）"><a href="#无OS-（仅了解即可）" class="headerlink" title="无OS （仅了解即可）"></a>无OS （仅了解即可）</h3><ol>
-<li><strong>人工操作方式</strong></li>
-</ol>
-<p>​        1946-50年代中：电子管时代，计算机速度慢，无操作系统，集中计算，计算机资源昂贵；</p>
-<p>​        工作方式：</p>
-<p>​            用户：既是程序员又是操作员，用户是专业人员</p>
-<p>​            输入输出：纸带或卡片</p>
-<p>​            缺点：用户独占全机，CPU等待人工操作</p>
-<ol start="2">
-<li><p><strong>脱机I/O方式</strong></p>
-<p>优点：1、减少了CPU的空闲时间</p>
-<p>​            2、提高了I/O速度</p>
-</li>
-</ol>
-<h3 id="有OS"><a href="#有OS" class="headerlink" title="有OS"></a>有OS</h3><ol>
-<li><p><strong>批处理系统</strong></p>
-<ul>
-<li>用户使用系统提供的作业控制语言（JCL）来描述自己对作业运行控制意图，并将这些控制信息连同作业一起提交给计算机。</li>
-</ul>
-<ul>
-<li>由OS去控制、调度各种作业的运行并输出结果。</li>
-<li>由于作业进入系统后用户不再干预，从而提高了效率。</li>
-</ul>
-</li>
-</ol>
-<p>​    设计目标：提高系统资源的使用效率；提高作业吞吐量。</p>
-<p>​    <strong>单道批处理：</strong></p>
-<p>​        为实现对作业的连续处理，需要先把一批作业以脱机方式输入到磁带上，并在系统中配上监督程序，在它的控制下，使这批作业能一个接一个的连续处理。</p>
-<p>​        <strong>虽然系统对作业的处理是成批进行的，但在内存中始终保持一道作业。</strong></p>
-<p>​        缺点：系统中的资源得不到充分的利用，CPU的；利用率显著降低。</p>
-<p>​    <strong>多道批处理：</strong></p>
-<p>​        在多道批处理系统中，用户所提交的作业都先存放在外存上并排成一个队列，称为“后备队列”；然后，由作业调度程序按照一定的算法从后备队列中<strong>选择若干个作业调入内存</strong>，使它们共享CPU和系统中的各种资源。</p>
-<p>​        优点：资源利用率高、系统吞吐量大</p>
-<p>​        确缺点：周转时间变长、无交互能力</p>
-<p>​        需要解决的问题：（1）处理机（CPU）争用问题；（2）内存的分配和保护问题；（3）I/O设备的分配；（4）文件的组织和管理问题；（5）作业管理问题；（6）用户与系统的接口问题。</p>
-<ol start="2">
-<li><strong>分时系统</strong><ul>
-<li>一台计算机连入多个终端，用户通过各自的终端把作业送入计算机；计算机又通过终端向各个用户报告其作业的运行情况。</li>
-<li>计算机能分时轮流地为各个终端用户服务，并能及时地对用户服务请求予以响应。</li>
-</ul>
-</li>
-</ol>
-<p>​        目标：对用户的请求及时响应；尽量提高系统资源的利用率</p>
-<p>​        基本特征：</p>
-<p>​        （1）多路性：允许多个多台终端同时连到一台主机上，并按分时原则为每个用户服务。</p>
-<p>​        （2）独立性</p>
-<p>​        （3）及时性</p>
-<p>​        （4）交互性</p>
-<ol start="3">
-<li><strong>实时系统</strong></li>
-</ol>
-<p>​        提高系统的响应时间，对随机发生的外部事件做出<strong>及时</strong>的响应并在<strong>规定时间内</strong>对其进行处理。</p>
-<p>​        1、实时控制系统</p>
-<p>​        要求计算机能尽快处理测量系统测得的数据，以尽快实施响应控制。如：工业控制、导弹发射、飞机飞行。</p>
-<p>​        2、实时信息系统</p>
-<p>​        要求计算机能对终端设备发来的服务请求及时予以正确的回答。如：订票系统、股票交易系统。</p>
-<p>​        实时任务：按照任务执行时是否呈现周期性来划分：周期性任务和非周期性任务，都必须联系着一个截止时间：开始截止时间——任务在某时间以前必须开始执行；完成截止时间——任务在某事件以前必须完成。</p>
-<p>​        根据对截止时间的要求划分：</p>
-<p>​        1、硬实时任务：系统必须满足任务对截止时间的要求，否则可能出现难以预料的结果。</p>
-<p>​        2、软实时任务：它也联系着一个截止时间，但是并不严格，若偶尔错过了任务的截止时间，对系统产生的影响也不会太大。</p>
-<p>​        实时系统基本特征：（1）快速的响应时间；（2）有限的交互能力；（3）高可靠性</p>
-<h2 id="OS的基本特性（重点）"><a href="#OS的基本特性（重点）" class="headerlink" title="OS的基本特性（重点）"></a>OS的基本特性（重点）</h2><p>操作系统的基本特性：并发、共享、虚拟、异步</p>
-<ul>
-<li><strong>并发</strong></li>
-</ul>
-<p>​    并发：指两个或多个事件在<strong>同一时间间隔内</strong>发生。</p>
-<p>​        （注：在多道程序环境下，并发性指在一段时间内<strong>宏观上有多个程序在同时运行</strong>，但在单处理机系统中，每一时刻却仅能有一道程序执行，故在<strong>微观上这些程序只能是分时地交替执行</strong>（即有先后顺序之分）。）</p>
-<p>​    并行：指两个或多个事件在<strong>同一时刻</strong>发生。</p>
-<p>​        （注：宏观与微观上均为同时进行）</p>
-<ul>
-<li><p><strong>共享</strong></p>
-<p>指系统中的资源供内存中的多道程序所共同使用。</p>
-<ul>
-<li>互斥共享方式，如：打印机</li>
-<li>同时访问方式，如：磁盘（属于并发）</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li><p><strong>虚拟</strong></p>
-<p>指通过某种技术把一个物理实体变成为若干个逻辑上的对应物。如：分时系统将一机虚拟为多机。</p>
-<p>（1）时分复用技术</p>
-<p>如：将CPU的时间分为若干个时间片，每个时间片为一个用户服务，那么可以实现轮流的为多个用户提供服务。</p>
-<p>（2）空分复用技术</p>
-<p>如：将一个磁盘分为C盘 、D盘、E盘，即相当于将一个物理硬盘分成了几个逻辑上的空间。</p>
-</li>
-</ul>
-<ul>
-<li><p><strong>异步</strong></p>
-<p>由于存在资源的共享，系统中并发执行的多道进程“走走停停”，以不可预知的速度向前推进。</p>
-</li>
-</ul>
-<h2 id="OS的主要功能"><a href="#OS的主要功能" class="headerlink" title="OS的主要功能"></a>OS的主要功能</h2><ul>
-<li><p><strong>处理机管理功能</strong></p>
-<p>即CPU的管理，包括：进程的管理、处理机的调度与死锁</p>
-<ol>
-<li><p>进程控制</p>
-</li>
-<li><p>进程同步</p>
-<ul>
-<li>进程互斥方式：诸进程（线程）在对临界资源进行访问时，应采用互斥方式</li>
-<li>进程同步方式：相互合作去完成共同任务的诸进程（线程）间，由同步机构对它们的执行次序加以协调。</li>
-</ul>
-</li>
-<li><p>进程通信</p>
-<p>当有一组互相合作的进程去完成一个共同的任务时，在它们之间往往需要交换信息。</p>
-</li>
-<li><p>调度</p>
-<ul>
-<li><p>作业调度</p>
-<p>作业调度的基本任务是从后备队列中按照一定的算法选择出若千个作业，为它们分配运行所需的资源，在将这些作业调入内存后，分别为它们建立进程，使它们都成为可能获得处理机的就绪进程，并将它们插入就绪队列中。</p>
-</li>
-<li><p>进程调度</p>
-<p>进程调度的任务是从进程的就绪队列中按照一定的算法选出一个进程，将处理机分配给它，并为它设置运行现场，使其投入执行。</p>
-</li>
-</ul>
-</li>
-</ol>
-</li>
-<li><p><strong>存储器管理功能</strong></p>
-<p>主要指对内存的管理</p>
-<ol>
-<li><p>内存分配（和回收）</p>
-<ul>
-<li><p>静态分配方式</p>
-<p>每个作业的内存空间是<strong>在作业装入时确定</strong>的，在作业装入后的整个运行期间<strong>不允许</strong>该作业再<strong>申请新的内存空间</strong>，也<strong>不允许</strong>作业在内存中“<strong>移动</strong>”。</p>
-</li>
-<li><p>动态分配方式</p>
-<p>每个作业所要求的基本内存空间虽然也是<strong>在装入时确定</strong>的，但<strong>允许</strong>作业在运行过程中继续<strong>申请新得附加内存空间</strong>，以适应程序和数据的动态增长，也<strong>允许</strong>作业在内存中“<strong>移动</strong>”。</p>
-</li>
-</ul>
-</li>
-<li><p>内存保护</p>
-<p>主要任务：</p>
-<ul>
-<li> 确保每道用户程序只在自己的内存空间内运行，彼此互不干扰。</li>
-<li>绝不允许用户程序访问操作系统的程序和数据，也不允许用户程序转移到非共享的其他用户程序中去。</li>
-</ul>
-</li>
-<li><p>地址映射</p>
-<p>程序的起始地址都是“0”，其他地址都是相对于起始地址开始计算的，这些地址形成的地址范围叫“地址空间”类似“0”这样的地址叫做逻辑地址或相对地址。</p>
-<p>内存中的一系列单元所限定的地址范围叫做“内存空间”，其中的地址称为“物理地址”。</p>
-<p>存储器管理必须提供地址映射功能，以将地址空间中的逻辑地址转换为内存空间中与之对应的物理地址。该功能应在硬件的支持下完成。</p>
-</li>
-<li><p>内存扩充</p>
-<p>并非从物理上去扩大内存，而是借助虚拟技术从逻辑上扩充内存容量，以便让更多的用户程序能并发运行。</p>
-<p>（将暂时不运行的程序或进程从内存调到外存，从而释放一定的内存空间，因此可以调入更多新的进程进入内存空间）</p>
-<p>为了能在逻辑上扩充内存，系统必须具有内存扩充机制，用于实现下属功能：</p>
-<ul>
-<li><p>请求调入功能</p>
-<ul>
-<li>系统允许在仅装入部分用户程序和数据的情况下启动该程序运行。</li>
-<li>程序运行过程中发现所需程序和数据尚未装入内存，可向OS发出请求，将其从外存调入内存。</li>
-</ul>
-</li>
-<li><p>置换功能</p>
-<p>OS可将暂时不运行的程序和数据从内存调入外存，将所需的程序和数据调入内存。</p>
-</li>
-</ul>
-</li>
-</ol>
-</li>
-<li><p><strong>设备管理功能</strong></p>
-<p>主要任务：</p>
-<ul>
-<li>完成用户进程提出的I/O请求，为用户进程分配所需的I/O设备，并完成指定的I/O操作。</li>
-<li>提高CPU和I/O设备的利用率，提高I/O速度，方便用户使用I/O设备</li>
-</ul>
-<ol>
-<li><p>缓冲管理</p>
-<p>单缓冲机制、能实现双向同时传送数据的双缓冲机制、能提供多个设备同时使用的公用缓冲池机制。</p>
-</li>
-<li><p>设备分配</p>
-</li>
-<li><p>设备处理</p>
-</li>
-</ol>
-</li>
-<li><p><strong>文件管理功能</strong></p>
-<p>对程序和数据的管理（文件指的是程序和数据）</p>
-<p>主要任务：对用户文件和系统文件进行管理以方便用户使用，并保证文件的安全性。</p>
-<ol>
-<li><p>文件存储空间的管理</p>
-</li>
-<li><p>目录管理</p>
-</li>
-<li><p>文件的读/写管理和保护</p>
-<ul>
-<li><p>文件的读/写管理</p>
-</li>
-<li><p>文件的保护</p>
-<p>（1）防止未经核准的用户存取文件；</p>
-<p>（2）防止冒名顶替存取文件；</p>
-<p>（3）防止以不正确的方式使用文件</p>
-</li>
-</ul>
-</li>
-</ol>
-</li>
-<li><p><strong>操作系统与用户之间的接口</strong></p>
-<ol>
-<li>用户接口</li>
-<li>程序接口</li>
-</ol>
-</li>
-</ul>
-<h2 id="OS的结构设计"><a href="#OS的结构设计" class="headerlink" title="OS的结构设计"></a>OS的结构设计</h2><ul>
-<li><p><strong>传统的操作系统结构</strong></p>
-<ol>
-<li><p><strong>无结构操作系统</strong></p>
-<p>OS是由众多的过程直接构成，各过程之间可互相调用，但OS内部不存在任何结构，所以这种OS是无结构的，又称为整体系统结构。</p>
-<p>缺点：</p>
-<ul>
-<li><p>既庞大又杂乱，缺乏清晰的程序结构；</p>
-</li>
-<li><p>程序错误多、调试难、阅读理解难、维护难。</p>
-</li>
-</ul>
-</li>
-<li><p><strong>模块化操作系统结构</strong></p>
-<p>OS是采用“模块化程序设计”技术，按其功能划分为若干个独立的模块，管理相应的功能，同时规定好各模块之间的接口，以实现其交互，对较大模块又可按子功能进一步细分下去。</p>
-<p>优点：</p>
-<ul>
-<li>提高了OS设计的正确性、可理解性；</li>
-<li>容易扩充和维护</li>
-<li>加速了OS的开发过程</li>
-</ul>
-<p>缺点：</p>
-<ul>
-<li>模块及接口划分较困难</li>
-<li>从功能上划分模块，未区别共享资源和独占资源</li>
-<li>由于管理的差异，使OS结构变得不够清晰</li>
-</ul>
-</li>
-<li><p><strong>分层式操作系统结构</strong></p>
-<p>分层式OS结构是对模块化结构的一种改进，它按分层式结构设计的基本原则，将OS划分为若干个层次，每一层都只能使用其底层所提供的功能和服务，从硬件开始，在其上面一层一层地自底向上增添相应功能地软件，这种OS结构称为分层式OS结构。</p>
-<p>特点：</p>
-<ul>
-<li>每一步设计都建立在可靠的基础上，结构更清晰；</li>
-<li>调试和验证更容易，正确性更高。</li>
-</ul>
-<p>缺点：系统效率降低了。</p>
-</li>
-</ol>
-</li>
-<li><p><strong>现代操作系统结构</strong></p>
-<ol>
-<li><p><strong>微内核的操作系统结构</strong></p>
-<p>在OS内核中只留下一些最基本的功能，而将其他服务分离出去，由工作在用户状态下地进程来实现，形成所谓“客户/服务器”模式。客户进程可通过内核向服务器进程发送请求，以获取OS服务。</p>
-<p>特点：</p>
-<ul>
-<li>小而精练；</li>
-<li>系统的灵活性和可扩充性好；</li>
-<li>系统可靠性高；</li>
-<li>适用于分布式系统。（如：windows 2000/XP、UNIX、嵌入式OS）</li>
-</ul>
-</li>
-</ol>
-</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/01/16/%E7%AC%AC1%E7%AB%A0%20%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%BC%95%E8%AE%BA/" data-id="ckyh0nq7p0002sswq1zbsfrli" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-Hello-my-blog" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2021/11/13/Hello-my-blog/" class="article-date">
-  <time datetime="2021-11-13T11:21:05.000Z" itemprop="datePublished">2021-11-13</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/11/13/Hello-my-blog/">Hello my blog</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Mood"><a href="#Mood" class="headerlink" title="Mood"></a>Mood</h1><p>I am so excited to set up my personal blog!</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/11/13/Hello-my-blog/" data-id="ckyh0nq6b0000sswq5nn8gbkq" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2021/11/13/hello-world/" class="article-date">
-  <time datetime="2021-11-13T11:13:44.440Z" itemprop="datePublished">2021-11-13</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/11/13/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/11/13/hello-world/" data-id="ckyh0nq7i0001sswqenythp0u" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">归档</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/05/">五月 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/01/">一月 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/11/">十一月 2021</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">最新文章</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2022/05/05/C++%E5%9F%BA%E7%A1%80/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2022/01/16/%E7%AC%AC1%E7%AB%A0%20%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%BC%95%E8%AE%BA/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2021/11/13/Hello-my-blog/">Hello my blog</a>
-          </li>
-        
-          <li>
-            <a href="/2021/11/13/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2022 Luheng Chen<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-
-  
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-  </div>
-</body>
-</html>
+More info: Deployment
+</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Luheng Chen</div><div class="author-info__description">Welcome to my blog!</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/05/05/C++%E5%9F%BA%E7%A1%80/" title="C++基础"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C++基础"/></a><div class="content"><a class="title" href="/2022/05/05/C++%E5%9F%BA%E7%A1%80/" title="C++基础">C++基础</a><time datetime="2022-05-05T07:26:46.049Z" title="发表于 2022-05-05 15:26:46">2022-05-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/01/16/%E7%AC%AC1%E7%AB%A0%20%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%BC%95%E8%AE%BA/" title="第1章 操作系统引论"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="第1章 操作系统引论"/></a><div class="content"><a class="title" href="/2022/01/16/%E7%AC%AC1%E7%AB%A0%20%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%BC%95%E8%AE%BA/" title="第1章 操作系统引论">第1章 操作系统引论</a><time datetime="2022-01-16T08:31:11.802Z" title="发表于 2022-01-16 16:31:11">2022-01-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/11/13/Hello-my-blog/" title="Hello my blog"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello my blog"/></a><div class="content"><a class="title" href="/2021/11/13/Hello-my-blog/" title="Hello my blog">Hello my blog</a><time datetime="2021-11-13T11:21:05.000Z" title="发表于 2021-11-13 19:21:05">2021-11-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/11/13/hello-world/" title="Hello World"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/2021/11/13/hello-world/" title="Hello World">Hello World</a><time datetime="2021-11-13T11:13:44.440Z" title="发表于 2021-11-13 19:13:44">2021-11-13</time></div></div></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/05/"><span class="card-archive-list-date">五月 2022</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/01/"><span class="card-archive-list-date">一月 2022</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/11/"><span class="card-archive-list-date">十一月 2021</span><span class="card-archive-list-count">2</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">4</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2022-05-05T14:25:36.648Z"></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By Luheng Chen</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
